@@ -1,0 +1,16 @@
+.main-text2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.items{
+    border: 1px solid;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-left: 20px;
+}
+
+hr{
+    color: azure;
+}

@@ -8,12 +8,12 @@ export default function NavBar() {
          <Link to="/">RestReservSys</Link>
         <ul className='nav-middle'>
             <CustomLink to='/FindFood'>Find Food</CustomLink>
-            <CustomLink to='/Tracking'>Tracking</CustomLink>
+            <CustomLink to='/Reservations'>Reservations</CustomLink>
             <CustomLink to='/FindRest'>Find Restaurant</CustomLink>
             <CustomLink to='/Location'>Location</CustomLink>
         </ul>
         <ul>
-            <Link >Sign in</Link>
+            <Link to='/signin'>Sign in</Link>
             <Link>Sign up</Link>
         </ul>
           
