@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <div>
       <nav className='nav'>
-         <Link to="/">RestReservSys</Link>
+         <Link to="/" className='logo bg-emerald-600 rounded text-xl  text-white my-2 mx-2 ' >O-persia Restaurant</Link>
         <ul className='nav-middle'>
             <CustomLink to='/FindFood'>Find Food</CustomLink>
             <CustomLink to='/Reservations'>Reservations</CustomLink>

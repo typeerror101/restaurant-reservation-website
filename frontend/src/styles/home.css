@@ -1,5 +1,8 @@
-.logo{
-    height: 550px;
+body{
+    /* font-family: 'Advent Pro', sans-serif; */
+}
+.Main-img{
+    height: 450px;
 }
 
 .middle-elements{
@@ -8,14 +11,58 @@
     margin-top:6rem;
 }
 
-.main-text{
+.main-text h1{
     text-align:left;
     max-width: 400px;
-    margin-top: 2rem;
-    font-size: 1.7rem;
+    margin-top: 2.5rem;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+    font-size: 4.5rem;
 }
+
+
 
 .end-elements{
     display:block;
-    margin-left: 12rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+}
+
+
+input{
+    margin-right: 3rem;
+    margin-top: 2rem;
+    border: 1px solid;
+    border-radius: 0.3rem;
+    text-align: left;
+    text-indent: .4rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form-div{
+    /* background-color: rgb(203, 203, 204); */
+    
+}
+
+input{
+    
+}
+
+#myDropdown{
+    margin-right: 2rem;
+}
+
+select{
+    background-color: rgb(252, 252, 252);
+    padding: 3px;
+    border-radius: .3rem;
+    border: 1px solid;
+}
+
+label{
+    color: black;
 }

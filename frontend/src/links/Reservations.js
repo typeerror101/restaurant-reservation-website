@@ -6,7 +6,7 @@ export default function Reservations() {
   return (
     <div>
       <h1 className='main-text2'>Table List</h1>
-      <hr/>
+      <br/>
       <div className='list-items'>
         <div className='items'><p>Table 1</p><p>Reserved</p></div>
         <div className='items'><p>Table 2</p><p>Occupied</p></div>
