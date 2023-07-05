@@ -27,6 +27,7 @@ body{
     margin-left: 3rem;
     margin-top: 3rem;
     margin-right: 3rem;
+    
 }
 
 
@@ -65,4 +66,9 @@ select{
 
 label{
     color: black;
+}
+
+.Form-div:hover{
+    border-color: #6ca799;
+    background-color: #38978454;
 }

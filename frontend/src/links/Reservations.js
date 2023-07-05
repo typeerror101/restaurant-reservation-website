@@ -1,19 +1,36 @@
 import React from 'react'
 import '../App.css'
 import '../styles/reservation.css'
+import { useEffect,useState } from 'react';
 
 export default function Reservations() {
+const [reservations,setReservations] = useState([]);
+const [table , setTable] = useState([]);
+
+  useEffect(() => {
+    getReservations().then(reservations => {
+      setReservations(reservations);  
+    })
+   
+  }, []);
+
+  async function getReservations(){
+    const url = process.env.REACT_APP_API_URL + '/reservations';
+    const response = await fetch(url);
+    return await response.json();
+  }
+
+
+
   return (
-    <div>
-      <h1 className='main-text2'>Table List</h1>
+    <div className='Tables'>
+      <h1 className='main-text2'>Reserved Tables</h1>
       <br/>
-      <div className='list-items'>
-        <div className='items'><p>Table 1</p><p>Reserved</p></div>
-        <div className='items'><p>Table 2</p><p>Occupied</p></div>
-        <div className='items'><p>Table 3</p><p>Available</p></div>
-        <div className='items'><p>Table 4</p><p>Available</p></div>
-        <div className='items'><p>Table 5</p><p>Available</p></div>
+      {reservations.length > 0 && reservations.map(reservation => (
+        <div className='list-items'>
+          <div className='items'><p>{reservation.table}</p><p>{reservation.name}</p><p>{reservation.time}</p></div>
         </div>
-    </div>
+      ))}
+      </div>
   )
 }

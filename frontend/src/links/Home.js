@@ -1,4 +1,4 @@
-import React from 'react'
+import { Table } from '@mui/material';
 import { ReactComponent as Logo } from '../images/main-img.svg';
 import '../styles/home.css';
 import Button from '@mui/material/Button';
@@ -12,10 +12,15 @@ export default function Home() {
   const [time,setTime] = useState("");
   const [email,setEmail] = useState("");
   const [table,setTable] = useState("");
+  const [message,setMessage] = useState();
 
   function addBooking(ev){
     ev.preventDefault();
-    const url = process.env.REACT_APP_API_URL + '/reservation';
+    
+    try{
+    const TableNoInput = document.getElementById('myDropdown');
+    const TableNo = TableNoInput.value.toString().split(' ')[1];
+    const url = process.env.REACT_APP_API_URL + `/reservation/${TableNo}`;
     fetch(url,{
       method: 'POST',
       headers: {'Content-type':'application/json'},
@@ -34,13 +39,20 @@ export default function Home() {
         setEmail('');
         setTable('');
         console.log('result',json);
+        setMessage(json.message);
       });
+
     })
+    }catch (error){
+      setMessage('Table Booking failed!')
+    };
   }
   
 
   return (
     <>
+     <div className='flex flex-col h-full justify-between'>
+    
       <div className='middle-elements'>
         <div className='main-text'>
             <h1>Drink,Eat & Enjoy With Your Family.</h1>
@@ -52,11 +64,11 @@ export default function Home() {
         </div>
       </div>
       <div className='end-elements'>
-      <div>
+  
       <h2 className='underline'>Book A Table &rarr;</h2>
-      </div>
+    
        
-          <div className='border-2 rounded-md  border-teal-500 shadow-md  mx-0 flex justify-center form-div p-2 pt-0   mt-5 rounded-md '>
+          <div className='Form-div border-2 rounded-md  border-teal-500 shadow-md  mx-0 flex justify-center form-div p-2 pt-0   mt-5 rounded-md '>
           <form onSubmit={addBooking}>
             <label>Name : </label>
             <input type='text' value={name} onChange={ev => setName(ev.target.value)} placeholder='Your Name'required></input>
@@ -76,6 +88,8 @@ export default function Home() {
             <Button className="Submit" type="submit" sx = {{ marginBottom: '0.7rem'}} color="success" variant="contained">Book now</Button>
           </form>       
           </div>
+          {message && <div>{message}</div>}
+      </div>
       </div>
     </>
   )

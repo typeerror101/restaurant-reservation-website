@@ -5,6 +5,7 @@ body{
 .main-text2{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -17,4 +18,11 @@ body{
 
 hr{
     color: azure;
+}
+
+.Tables{
+    width: fit-content;
+    display: list-item;
+    justify-content: center;
+    align-items: center;
 }
