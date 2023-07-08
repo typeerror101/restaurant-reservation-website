@@ -18,20 +18,19 @@ app.post('/api/reservation/:TableNo', async (req,res) => {
     console.log(tableNo);
     console.log(Tablelist);
 
-    console.log(Tablelist.includes(tableNo));
-    const Date = req.body.date;
-
-
-    if(!Tablelist.includes(tableNo) && Date !=){
+    if(!Tablelist.includes(tableNo) ){
         await mongoose.connect(process.env.MONGO_URL);
         const {name,date,time,email,table} = req.body;
-        const reservation = await Reservation.create({name,date,time,email,table});
-        res.json(reservation);
+        // const {tableList} = Tablelist;
         Tablelist.push(tableNo);  
+        const reservation = await Reservation.create({name,date,time,email,table,Tablelist});
+        res.json(reservation);
+
+      
     }else{
-        res.status(201).json({message : 'Table has been alreaady Booked! Please select another table.'});
+        res.status(201).json({message : 'Table has been alreaady Booked! Please select another table or another date'});
     }
-  
+
 });
 
 app.get('/api/reservations', async (req,res) => {

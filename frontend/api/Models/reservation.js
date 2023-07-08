@@ -7,7 +7,8 @@ const ReservationSchema = new Schema({
     time:{type: String, required:true},
     email:{type: String, required:true},
     table:{type: String, required:true},
-})
+    tableList:{type: Array, default: [],},
+});
 
 const ReservationModel = model('Reservation',ReservationSchema);
 

@@ -38,8 +38,13 @@ export default function Home() {
         setTime('');
         setEmail('');
         setTable('');
-        console.log('result',json);
+        // const booking = json.find(booking => booking.table == TableNo && booking.date == date)
+        // console.log('result',json);
+        // if(booking){
         setMessage(json.message);
+        // }else{
+        //   setMessage('Table Booked Successfully!')
+        // }
       });
 
     })
