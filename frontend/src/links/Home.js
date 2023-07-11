@@ -19,7 +19,7 @@ export default function Home() {
     
     try{
     const TableNoInput = document.getElementById('myDropdown');
-    const TableNo = TableNoInput.value.toString().split(' ')[1];
+    const TableNo = TableNoInput.value.toString();
     const url = process.env.REACT_APP_API_URL + `/reservation/${TableNo}`;
     fetch(url,{
       method: 'POST',

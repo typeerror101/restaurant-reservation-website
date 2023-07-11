@@ -28,7 +28,7 @@ const [table , setTable] = useState([]);
       <br/>
       {reservations.length > 0 && reservations.map(reservation => (
         <div className='list-items'>
-          <div className='items'><p>{reservation.table}</p><p>{reservation.name}</p><p>{reservation.time}</p></div>
+          <div className='items'><p>{reservation.table}</p><p>{reservation.name}</p><p>{reservation.date}</p><p>{reservation.time}</p></div>
         </div>
       ))}
       </div>

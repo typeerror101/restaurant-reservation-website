@@ -11,20 +11,21 @@ app.get('/api/test',(req,res) => {
     res.json('test ok3');
 });
 
-const Tablelist = [];
 app.post('/api/reservation/:TableNo', async (req,res) => {
 
     const tableNo = req.params.TableNo;  
-    console.log(tableNo);
-    console.log(Tablelist);
+    await mongoose.connect(process.env.MONGO_URL);
+    var doc = await Reservation.findOne({table: tableNo, date: req.body.date});
 
-    if(!Tablelist.includes(tableNo) ){
-        await mongoose.connect(process.env.MONGO_URL);
+    console.log(doc);
+
+    if(!doc > 0){
+       
         const {name,date,time,email,table} = req.body;
-        // const {tableList} = Tablelist;
-        Tablelist.push(tableNo);  
-        const reservation = await Reservation.create({name,date,time,email,table,Tablelist});
+       
+        const reservation = await Reservation.create({name,date,time,email,table});
         res.json(reservation);
+        // res.status(201).json({message : 'Table has been Booked!'});
 
       
     }else{
@@ -39,4 +40,4 @@ app.get('/api/reservations', async (req,res) => {
     res.json(Tables);
 });
 
-app.listen(4041);
+app.listen(4040);
