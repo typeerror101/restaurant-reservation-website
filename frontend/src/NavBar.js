@@ -7,9 +7,9 @@ export default function NavBar() {
       <nav className='nav'>
          <Link to="/" className='logo bg-emerald-600 rounded text-xl  text-white my-2 mx-2 ' >O-persia Restaurant</Link>
         <ul className='nav-middle'>
-            <CustomLink to='/FindFood'>Find Food</CustomLink>
             <CustomLink to='/Reservations'>Reservations</CustomLink>
-            <CustomLink to='/FindRest'>Find Restaurant</CustomLink>
+            <CustomLink to='/Payments'>Payments</CustomLink>
+            <CustomLink to='/FindFood'>Find Food</CustomLink>
             <CustomLink to='/Location'>Location</CustomLink>
         </ul>
         <ul>

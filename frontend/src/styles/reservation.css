@@ -10,11 +10,17 @@ body{
 }
 
 .items{
-    background-image: "../images/table.jpeg";
-    border: 1px solid;
+    background-image: url("../images/noun-table-1106547.svg");
+    background-size: cover;
+    /* border: 1px solid; */
     margin-bottom: 2rem;
+    font-size: smaller;
     margin-top: 2rem;
-    padding-left: 20px;
+    padding-left: 65px;
+    padding-top: 70px;
+    height: 230px;
+    width: 230px;
+    
 }
 
 hr{
@@ -22,9 +28,8 @@ hr{
 }
 
 .Tables{
-    width: fit-content;
-    display: list-item;
-    justify-content: center;
-    align-items: center;
 }
 
+.tables{
+
+}

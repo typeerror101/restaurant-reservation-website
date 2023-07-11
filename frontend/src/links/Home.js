@@ -85,10 +85,11 @@ export default function Home() {
             <input type="email" value={email} onChange={ev => setEmail(ev.target.value)} placeholder='Your Email Address' required></input>
             <label>No. of seats: </label>
             <select id="myDropdown" value={table} onChange={ev => setTable(ev.target.value)} name="seats" required>
-              <option value="none">None</option>
               <option value="Table 1">Table 1 (2seater)</option>
               <option value="Table 2">Table 2 (4seater)</option>
               <option value="Table 3">Table 3 (4seater)</option>
+              <option value="Table 4">Table 4 (2seater)</option>
+              <option value="Table 5">Table 5 (3seater)</option>
             </select>
             <Button className="Submit" type="submit" sx = {{ marginBottom: '0.7rem'}} color="success" variant="contained">Book now</Button>
           </form>       
