@@ -73,7 +73,7 @@ export default function Home() {
       <h2 className='underline'>Book A Table &rarr;</h2>
     
        
-          <div className='Form-div border-2 rounded-md  border-teal-500 shadow-md  mx-0 flex justify-center form-div p-2 pt-0   mt-5 rounded-md '>
+          <div className='Form-div border-2 rounded-md  border-teal-500 shadow-md  mx-0 flex justify-center form-div p-2 pt-0   mt-3 rounded-md '>
           <form onSubmit={addBooking}>
             <label>Name : </label>
             <input type='text' value={name} onChange={ev => setName(ev.target.value)} placeholder='Your Name'required></input>
@@ -93,7 +93,7 @@ export default function Home() {
             <Button className="Submit" type="submit" sx = {{ marginBottom: '0.7rem'}} color="success" variant="contained">Book now</Button>
           </form>       
           </div>
-          {message && <div>{message}</div>}
+          {message && <div className='Alert'>{message}</div>}
       </div>
       </div>
     </>

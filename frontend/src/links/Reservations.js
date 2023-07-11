@@ -27,8 +27,8 @@ const [table , setTable] = useState([]);
       <h1 className='main-text2'>Reserved Tables</h1>
       <br/>
       {reservations.length > 0 && reservations.map(reservation => (
-        <div className='list-items'>
-          <div className='items'><p>{reservation.table}</p><p>{reservation.name}</p><p>{reservation.date}</p><p>{reservation.time}</p></div>
+        <div className='list-items flex justify-between'>
+          <div className='items'><p>{reservation.table}</p><p>Name: {reservation.name}</p><p>Date: {reservation.date}</p><p>Time: {reservation.time}</p></div>
         </div>
       ))}
       </div>

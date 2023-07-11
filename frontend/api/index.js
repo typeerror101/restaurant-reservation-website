@@ -24,12 +24,12 @@ app.post('/api/reservation/:TableNo', async (req,res) => {
         const {name,date,time,email,table} = req.body;
        
         const reservation = await Reservation.create({name,date,time,email,table});
-        res.json(reservation);
-        // res.status(201).json({message : 'Table has been Booked!'});
+        res.status(200).json({message : 'Table has been Booked!'});
+        
 
       
     }else{
-        res.status(201).json({message : 'Table has been alreaady Booked! Please select another table or another date'});
+        res.status(201).json({message : 'Table has been already Booked! Please select another table or another date.'});
     }
 
 });

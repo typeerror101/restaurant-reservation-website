@@ -10,6 +10,7 @@ body{
 }
 
 .items{
+    background-image: "../images/table.jpeg";
     border: 1px solid;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -26,3 +27,4 @@ hr{
     justify-content: center;
     align-items: center;
 }
+

@@ -72,3 +72,12 @@ label{
     border-color: #6ca799;
     background-color: #38978454;
 }
+
+.Alert{
+    background-color: rgba(255, 0, 0, 0.445);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2rem;
+    width: fit-content;
+    margin-top: .5rem;
+}
