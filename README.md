@@ -1,4 +1,4 @@
-# restaurant reseravation website
+# restaurant reservation website
  This a restaurant reservation website made for my MERN stack intership
  
 Deployment: https://opersia-restaurant.netlify.app/
