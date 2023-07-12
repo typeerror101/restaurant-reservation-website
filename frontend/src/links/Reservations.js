@@ -5,7 +5,6 @@ import { useEffect,useState } from 'react';
 
 export default function Reservations() {
 const [reservations,setReservations] = useState([]);
-const [table , setTable] = useState([]);
 
   useEffect(() => {
     getReservations().then(reservations => {

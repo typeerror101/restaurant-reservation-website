@@ -1,4 +1,3 @@
-import { Table } from '@mui/material';
 import { ReactComponent as Logo } from '../images/main-img.svg';
 import '../styles/home.css';
 import Button from '@mui/material/Button';
@@ -85,6 +84,7 @@ export default function Home() {
             <input type="email" value={email} onChange={ev => setEmail(ev.target.value)} placeholder='Your Email Address' required></input>
             <label>No. of seats: </label>
             <select id="myDropdown" value={table} onChange={ev => setTable(ev.target.value)} name="seats" required>
+              <option value='none'>None</option>
               <option value="Table 1">Table 1 (2seater)</option>
               <option value="Table 2">Table 2 (4seater)</option>
               <option value="Table 3">Table 3 (4seater)</option>

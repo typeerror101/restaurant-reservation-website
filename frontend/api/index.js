@@ -11,6 +11,23 @@ app.get('/api/test',(req,res) => {
     res.json('test ok3');
 });
 
+app.delete('/api/delete', async (req, res) => {
+    const { name, email, table } = req.body;
+  
+    try {
+      // Delete the collection based on name and email criteria
+      const result = await Reservation.deleteOne({ name: name, email: email ,table: table});
+  
+      if (result.deletedCount > 0) {
+        // res.status(200).json({ message: 'Collection deleted successfully' });
+      } else {
+        res.status(404).json({ message: 'Reservation not Found!' });
+      }
+    } catch (error) {
+      res.status(500).json({ message: 'Error deleting collection', error: error });
+    }
+  });
+
 app.post('/api/reservation/:TableNo', async (req,res) => {
 
     const tableNo = req.params.TableNo;  
@@ -39,5 +56,7 @@ app.get('/api/reservations', async (req,res) => {
     const Tables = await Reservation.find();
     res.json(Tables);
 });
+
+
 
 app.listen(4040);
