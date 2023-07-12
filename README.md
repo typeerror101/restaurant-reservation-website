@@ -3,8 +3,11 @@
  
 Deployment: https://opersia-restaurant.netlify.app/
 
- ![image](https://github.com/typeerror101/restaurant-reseravation-website/assets/57269077/020acf5d-3651-4eb5-a23b-42049cd60456)
+![image](https://github.com/typeerror101/restaurant-reservation-website/assets/57269077/9e7c36cf-ac16-4e3c-aaa2-c05377f956eb)
+![image](https://github.com/typeerror101/restaurant-reservation-website/assets/57269077/63c903eb-0b5d-484d-aade-e6224f6f465c)
 
- ![image](https://github.com/typeerror101/restaurant-reseravation-website/assets/57269077/8d1491e8-c82e-4dfd-a2a9-1cf1583045b4)
+![image](https://github.com/typeerror101/restaurant-reservation-website/assets/57269077/06b6ed85-f715-4599-b3e9-80e18b3cbc38)
+
+
 
 
