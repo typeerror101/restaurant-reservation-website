@@ -1,5 +1,5 @@
 # restaurant reservation website
- This a restaurant reservation website made for my MERN stack intership
+ This a restaurant reservation website made for my MERN stack intership.It takes your details as response and reserves a table for you in real-time. It displays all the current on-going reservations in a graphical manner and you can also pay for your table in the website itself which removes your reservation.
  
 Deployment: https://opersia-restaurant.netlify.app/
 
