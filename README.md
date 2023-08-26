@@ -1,7 +1,12 @@
-# restaurant reservation website
- This a restaurant reservation website made for my MERN stack intership.It takes your details as response and reserves a table for you in real-time. It displays all the current on-going reservations in a graphical manner and you can also pay for your table in the website itself which removes your reservation.
- 
 Deployment: https://opersia-restaurant.netlify.app/
+
+In this project, I undertook the exciting challenge of creating a comprehensive restaurant reservation platform that seamlessly facilitates online table bookings and secure payments. Leveraging my expertise in cutting-edge web development technologies, I utilized React.js along with Material-UI for building an engaging and user-friendly front-end interface. This allowed customers to easily search for available tables, specify their reservation preferences, and seamlessly proceed to the payment process.
+
+On the back-end, I harnessed the power of Node.js and Express.js to create a robust API infrastructure. This enabled smooth communication between the front-end and the MongoDB database, where I carefully designed schemas to efficiently store user data, reservation details, and payment information. Through Mongoose, I ensured seamless interactions with the database, maintaining data integrity and enforcing validation checks to ensure accurate inputs.
+
+Throughout the development process, I paid meticulous attention to security measures. I implemented data protection protocols to safeguard sensitive user information and payment details, while also validating and sanitizing user inputs to prevent potential vulnerabilities.
+
+The project culminated in a fully functional restaurant reservation website that not only met but exceeded the needs of the users and the restaurant. Through my adept utilization of React.js, Material-UI, Node.js, Express.js, and MongoDB, I was able to create a solution that seamlessly connects customers with a streamlined reservation and payment process, enhancing the overall dining experience.
 
 ![image](https://github.com/typeerror101/restaurant-reservation-website/assets/57269077/9e7c36cf-ac16-4e3c-aaa2-c05377f956eb)
 ![image](https://github.com/typeerror101/restaurant-reservation-website/assets/57269077/63c903eb-0b5d-484d-aade-e6224f6f465c)
