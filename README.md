@@ -4,10 +4,6 @@ In this project, I undertook the exciting challenge of creating a comprehensive 
 
 On the back-end, I harnessed the power of Node.js and Express.js to create a robust API infrastructure. This enabled smooth communication between the front-end and the MongoDB database, where I carefully designed schemas to efficiently store user data, reservation details, and payment information. Through Mongoose, I ensured seamless interactions with the database, maintaining data integrity and enforcing validation checks to ensure accurate inputs.
 
-Throughout the development process, I paid meticulous attention to security measures. I implemented data protection protocols to safeguard sensitive user information and payment details, while also validating and sanitizing user inputs to prevent potential vulnerabilities.
-
-The project culminated in a fully functional restaurant reservation website that not only met but exceeded the needs of the users and the restaurant. Through my adept utilization of React.js, Material-UI, Node.js, Express.js, and MongoDB, I was able to create a solution that seamlessly connects customers with a streamlined reservation and payment process, enhancing the overall dining experience.
-
 ![image](https://github.com/typeerror101/restaurant-reservation-website/assets/57269077/9e7c36cf-ac16-4e3c-aaa2-c05377f956eb)
 ![image](https://github.com/typeerror101/restaurant-reservation-website/assets/57269077/63c903eb-0b5d-484d-aade-e6224f6f465c)
 ![image](https://github.com/typeerror101/restaurant-reservation-website/assets/57269077/06b6ed85-f715-4599-b3e9-80e18b3cbc38)
